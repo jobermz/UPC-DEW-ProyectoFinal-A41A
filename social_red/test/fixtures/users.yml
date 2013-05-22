@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  father_name: MyString
+  mother_name: MyString
+  name: MyString
+  mail: MyString
+  password: MyString
+  sex: 
+  person_type: 
+  identity_document_type: 
+
+two:
+  father_name: MyString
+  mother_name: MyString
+  name: MyString
+  mail: MyString
+  password: MyString
+  sex: 
+  person_type: 
+  identity_document_type: 
