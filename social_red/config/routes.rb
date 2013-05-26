@@ -1,4 +1,10 @@
 SocialRed::Application.routes.draw do
+  resources :locals
+
+
+  resources :districts
+
+
   resources :users
 
 

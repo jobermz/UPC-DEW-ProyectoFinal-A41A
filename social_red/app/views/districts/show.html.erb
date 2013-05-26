@@ -1,0 +1,10 @@
+<p id="notice">Distrito agregado correctamente<%= notice %></p>
+
+<p>
+  <b>Nombre del Distrito:</b>
+  <%= @district.district_name %>
+</p>
+
+
+<%= link_to 'Editar', edit_district_path(@district) %> |
+<%= link_to 'Volver', districts_path %>
