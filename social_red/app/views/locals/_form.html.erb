@@ -29,7 +29,8 @@
   </div>
   <div class="field">
     <%= f.label :district %><br />
-    <%= f.text_field :district %>
+    <%= f.collection_select :district_id, District.all, :id, :name_district, :prompt => true %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
