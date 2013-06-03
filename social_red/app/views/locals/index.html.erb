@@ -1,12 +1,12 @@
-<h1>Listing locals</h1>
+<h1>Listado locales</h1>
 
 <table>
   <tr>
-    <th>Description</th>
-    <th>Address</th>
-    <th>Phone</th>
-    <th>Map url</th>
-    <th>District</th>
+    <th>Descripcion</th>
+    <th>Direccion</th>
+    <th>Telefono</th>
+    <th>URL Gogle Maps</th>
+    <th>Distrito</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,13 +19,13 @@
     <td><%= local.phone %></td>
     <td><%= local.map_url %></td>
     <td><%= local.district %></td>
-    <td><%= link_to 'Show', local %></td>
-    <td><%= link_to 'Edit', edit_local_path(local) %></td>
-    <td><%= link_to 'Destroy', local, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', local %></td>
+    <td><%= link_to 'Editar', edit_local_path(local) %></td>
+    <td><%= link_to 'Eliminar', local, method: :delete, data: { confirm: 'Esta Seguro?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Local', new_local_path %>
+<%= link_to 'Nuevo local', new_local_path %>

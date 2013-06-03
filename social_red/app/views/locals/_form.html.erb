@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :district %><br />
-    <%= f.collection_select :district_id, District.all, :id, :name_district, :prompt => true %>
+    <%= f.collection_select :district_id, District.all, :id, :district_name, :prompt => true %>
 
   </div>
   <div class="actions">
