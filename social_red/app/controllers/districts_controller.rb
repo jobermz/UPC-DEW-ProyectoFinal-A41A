@@ -45,6 +45,7 @@ class DistrictsController < ApplicationController
     respond_to do |format|
       if @district.save
         format.html { redirect_to @district, notice: 'Distrito Agredado Correctamente.' }
+
         format.json { render json: @district, status: :created, location: @district }
       else
         format.html { render action: "new" }
@@ -60,12 +61,22 @@ class DistrictsController < ApplicationController
 
     respond_to do |format|
       if @district.update_attributes(params[:district])
-        format.html { redirect_to @district, notice: 'Distrito Actualizado Correctamente.' }
+        format.html { redirect_to @district, notice: 'Distrito actualizado Correctamente' }
+        
+
         format.json { head :no_content }
+
+
       else
         format.html { render action: "edit" }
         format.json { render json: @district.errors, status: :unprocessable_entity }
       end
+
+       def ok
+    return "Se agrego Distrito" 
+
+  end
+
     end
   end
 

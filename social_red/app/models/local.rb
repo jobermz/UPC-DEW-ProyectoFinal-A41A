@@ -5,6 +5,7 @@ class Local < ActiveRecord::Base
  belongs_to :district
  has_many :districts
 
+ 
 
 #class Book < ActiveRecord::Base
 #  attr_accessible :title, :author_id
@@ -19,6 +20,10 @@ validates_presence_of :address, :message => '^ Debes ingresar una direcion'
 validates_presence_of :phone, :message => '^ Debes ingresar un numero de telefono'
 validates_presence_of :map_url, :message => '^ Debes ingresar un URL de Google MAPS'
 validates_presence_of :district_id, :message => '^ Debes Elegir un distrito'
+
+  
+
+ 
 
 
 end

@@ -1,4 +1,13 @@
 SocialRed::Application.routes.draw do
+  resources :groups
+
+
+  resources :menbers
+
+
+  resources :genres
+
+
  root :to => "users#index"
 
   resources :locals

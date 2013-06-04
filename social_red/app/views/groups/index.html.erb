@@ -1,0 +1,27 @@
+<h1>Listado Grupos</h1>
+
+<table>
+  <tr>
+    <th>Nombre del Grupo</th>
+    <th>Miembros</th>
+    <th>Genero</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @groups.each do |group| %>
+  <tr>
+    <td><%= group.name %></td>
+    <td><%= group.menber %></td>
+    <td><%= group.genre %></td>
+    <td><%= link_to 'Mostrar', group %></td>
+    <td><%= link_to 'Editar', edit_group_path(group) %></td>
+    <td><%= link_to 'Eliminar', group, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo Grupo', new_group_path %>

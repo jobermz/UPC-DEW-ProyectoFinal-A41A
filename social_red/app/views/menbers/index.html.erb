@@ -1,0 +1,25 @@
+<h1>Listing menbers</h1>
+
+<table>
+  <tr>
+    <th>Student</th>
+    <th>Group</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @menbers.each do |menber| %>
+  <tr>
+    <td><%= menber.student %></td>
+    <td><%= menber.group %></td>
+    <td><%= link_to 'Show', menber %></td>
+    <td><%= link_to 'Edit', edit_menber_path(menber) %></td>
+    <td><%= link_to 'Destroy', menber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Menber', new_menber_path %>
